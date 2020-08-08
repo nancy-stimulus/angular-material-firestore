@@ -1,0 +1,28 @@
+input {
+  width:25%;
+}
+
+.user-container{
+  align-items: center;
+}
+
+
+.main_container { 
+  margin-top: 50px;
+  max-width: 100%;
+  width: 1340px;
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 40%;
+}
+
+th, td {
+  padding: 5px;
+}

@@ -10,7 +10,7 @@ import { firestore } from 'firebase';
 })
 export class CustomerService {
   customerCollection = this.afs.collection("Customer");
-  users : DataInterface<Customer> = {};
+  customers : DataInterface<Customer> = {};
   constructor(public afs: AngularFirestore) {  }
 
   getCustomers() {

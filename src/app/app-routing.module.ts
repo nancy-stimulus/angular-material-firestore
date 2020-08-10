@@ -4,12 +4,11 @@ import { SignupComponent } from './components/signup/signup.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { CustomerComponent } from './components/customer/customer.component';
 
-
 const routes: Routes = [
-  {path: '', component: CustomerComponent },
+  {path: '', component: SignInComponent },
   {path: 'login', component: SignInComponent },
   {path: 'signUp', component: SignupComponent},
-  {path: 'addCustomer', component: CustomerComponent },
+  {path: 'customer', component: CustomerComponent },
    
 ];
 

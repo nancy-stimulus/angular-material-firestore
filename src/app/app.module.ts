@@ -6,16 +6,20 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
-import { UserComponent } from './components/user/user.component';
-import { UserService } from './services/user.service';
+
+import { CustomerService } from './services/customer.service';
 import { FormsModule } from '@angular/forms';
-import { UserDetailsComponent } from './components/user-details/user-details.component';
+
+import { SignupComponent } from './components/signup/signup.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
+import { CustomerComponent } from './components/customer/customer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
-    UserDetailsComponent,
+    SignupComponent,
+    SignInComponent,
+    CustomerComponent,
     
   ],
   imports: [
@@ -25,7 +29,7 @@ import { UserDetailsComponent } from './components/user-details/user-details.com
     AngularFirestoreModule,
     FormsModule
   ],
-  providers: [UserService],
+  providers: [CustomerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
